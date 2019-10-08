@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900&display=swap" rel="stylesheet">
+    <title>OSUSUME</title>
+    <script src="main.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="output" width="760px" height="430px"></canvas>
+    <div id="main_panel">
+      <div id="user_pic">
+        <p>画像読み込み:
+          <input id="add" type="file">
+          <input type="button" id="btn" value="実行" onclick="img_add();">
+        </p>
+      </div>
+      <div id="user_control">
+        <p>画像操作 
+          <br>
+          <input type="button" id="up" value="上" onclick="up();">
+          <input type="button" id="down" value="下" onclick="down();">
+        </p>
+        <p>
+          <input type="button" id="l" value="左" onclick="left();">
+          <input type="button" id="r" value="右" onclick="right();">
+        </p>
+        <input type="button" id="big" value="拡大" onclick="big();">
+        <input type="button" id="small" value="縮小" onclick="small();">
+      </div>
+      <div id="user_font">
+        <p>上文字:
+          <input type="text" id="text1" value="セイキンが">上文字大きさ:
+          <input id="font1" type="number" value="24" onclick="img_add();">px 
+          <br>下文字:
+          <input type="text" id="text2" value="SEIKIN">下文字大きさ:
+          <input id="font2" type="number" value="42" onclick="img_add();">px 
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
