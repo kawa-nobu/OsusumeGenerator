@@ -92,3 +92,21 @@
         add_text2();
       }
     }
+    function save_open() {
+      if (document.getElementById('add').files[0] != undefined) {
+        var page = document.documentElement;
+        var page_height = page.scrollHeight - page.clientHeight;
+        var canvas = document.getElementById('output');
+        var save_tag = document.getElementById('save_img');
+        var gene_data = canvas.toDataURL('image/png');
+        var a_tag = document.getElementById('save_down');
+        save_tag.style.visibility = "visible";
+        a_tag.style.visibility = "visible";
+        save_tag.src = gene_data;
+        a_tag.href = gene_data;
+        a_tag.download = 'save_picture.png';
+        window.scroll(0, page_height);
+      } else {
+        window.alert("画像が指定されていないので保存できません！");
+      }
+    } 

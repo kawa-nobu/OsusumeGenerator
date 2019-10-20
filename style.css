@@ -14,3 +14,9 @@
     height: 50%;
     width: 50%;
 }
+#save_down{
+    visibility: hidden;
+}
+#save_img{
+    visibility: hidden;
+}

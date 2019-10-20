@@ -6,6 +6,7 @@
     <title>OSUSUME</title>
     <script src="main.js" charset="UTF-8"></script>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   </head>
   <body>
     <canvas id="output" width="760px" height="430px"></canvas>
@@ -37,6 +38,11 @@
           <input type="text" id="text2" value="SEIKIN">下文字大きさ:
           <input id="font2" type="number" value="42" onclick="img_add();">px 
         </p>
+      </div>
+      <div id="save_area">
+        <p><input type="button" id="save" onclick="save_open();" value="保存用画像表示&更新"></p>
+        <p><a href="" id="save_down">ダウンロード</a></p>
+        <img src="" id="save_img">
       </div>
     </div>
   </body>
