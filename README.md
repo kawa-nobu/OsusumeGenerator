@@ -5,3 +5,6 @@
 # 注意
 利用は自己責任です。
 何か問題があれば削除する場合があります。
+# 使おう！
+使うにはこのリンクから！
+https://kawa-nobu.github.io/OsusumeGenerator/
